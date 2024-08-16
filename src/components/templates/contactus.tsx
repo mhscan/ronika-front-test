@@ -1,4 +1,3 @@
-
 import "./../../styles/templates/contactus.css";
 import { useFormik } from "formik";
 const Contactus = () => {
@@ -24,9 +23,20 @@ const Contactus = () => {
           console.log(error);
         });
     },
-    validate: () => {
+    validate: (values) => {
       const errors = {};
 
+      if (values.fullname === "") {
+        errors.fullname = "پر کردن این فیلد ضروری است.";
+      }
+
+      if (values.email === "") {
+        errors.email = "پر کردن این فیلد ضروری است.";
+      } else if (
+        !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+      ) {
+        errors.email = "ایمیل نا معتبر است";
+      }
 
       return errors;
     },
@@ -62,23 +72,34 @@ const Contactus = () => {
 
       <form onSubmit={form.handleSubmit} className='formContainer'>
         <div>
-          <input
-            name={"fullname"}
-            onChange={form.handleChange}
-            value={form.values.fullname}
-            onBlur={form.handleBlur}
-            type='text'
-            placeholder='نام و نام خانوداگی*'
-          />
+          <div className='errorContainer'>
+            <input
+              name={"fullname"}
+              onChange={form.handleChange}
+              value={form.values.fullname}
+              onBlur={form.handleBlur}
+              type='text'
+              placeholder='نام و نام خانوداگی*'
+            />
+            {form.errors.fullname && form.touched.fullname && (
+              <span>{form.errors.fullname}</span>
+            )}
+          </div>
 
-          <input
-            name={"email"}
-            onChange={form.handleChange}
-            value={form.values.email}
-            onBlur={form.handleBlur}
-            type='text'
-            placeholder='ایمیل*'
-          />
+          <div className='errorContainer'>
+            <input
+              name={"email"}
+              onChange={form.handleChange}
+              value={form.values.email}
+              onBlur={form.handleBlur}
+              type='text'
+              placeholder='ایمیل*'
+            />
+
+            {form.errors.email && form.touched.email && (
+              <span> {form.errors.email}</span>
+            )}
+          </div>
         </div>
 
         <textarea
@@ -86,7 +107,7 @@ const Contactus = () => {
           onChange={form.handleChange}
           value={form.values.message}
           onBlur={form.handleBlur}
-          className="message"
+          className='message'
           placeholder='پیام شما...'
         />
 
