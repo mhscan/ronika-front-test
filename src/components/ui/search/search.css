@@ -1,0 +1,47 @@
+.search {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #8c8c8c;
+  display: flex;
+  align-items: center;
+}
+.search > input {
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 6px 20px;
+}
+.search > input::placeholder {
+  color: #bebebe;
+  font-size: 14px;
+  font-weight: 400;
+}
+.search > input:active {
+  border: none;
+  outline: none;
+}
+.search > img {
+  position: absolute;
+  left: 22px;
+}
+
+.resContainer {
+  width: 100%;
+}
+.resContainer > p {
+  background-color: #fff;
+  padding: 12px 20px;
+  color: #000;
+}
+
+.resContainer > p:hover {
+
+  color: #375CE7;
+}
+
+.resContainer > p:last-child {
+  border-end-end-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

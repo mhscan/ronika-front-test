@@ -1,0 +1,130 @@
+.footer {
+  width: 681px;
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.footerContent {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerMedia {
+  width: 176px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 25px;
+  flex-direction: column;
+}
+
+.footerMedia > p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #0e1924;
+  width: 100%;
+}
+
+.mediaContainer {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.footerInfo {
+  width: 300px;
+
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.footerInfo > div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 13px;
+}
+
+.footer > p {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 40px;
+  color: #848a8f;
+}
+
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 800px) {
+  .footer {
+    margin-top: 60px;
+    width: 100%;
+    padding: 0 20px;
+    /* display: flex;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px; */
+  }
+
+  .footerContent {
+    /* display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between; */
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .footerMedia {
+    width: 176px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    /* flex-direction: column; */
+  }
+
+  .footerMedia > p {
+    text-align: center;
+    /* font-size: 12px;
+    font-weight: 400;
+    color: #0e1924;
+    width: 100%; */
+  }
+
+  /* .mediaContainer {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  } */
+  .footerInfo {
+    width: 300px;
+
+    /* display: flex; */
+    align-items: center;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    gap: 25px;
+  }
+  .footerInfo > div {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+  }
+
+  .footer > p {
+    text-align: center;
+
+    /* margin-top: 50px;
+    width: 100%; */
+  }
+}

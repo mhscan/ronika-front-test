@@ -1,0 +1,131 @@
+.Newsletter {
+  background: rgb(33, 55, 125);
+  background: linear-gradient(
+    50deg,
+    rgb(36, 62, 145) 0%,
+    rgba(14, 25, 36, 1) 65%
+  );
+
+  width: 100%;
+  height: 320px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-top: 156px;
+  margin-bottom: 151px;
+}
+
+.newsLeaterBG {
+  z-index: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: -30px;
+  left: -30px;
+}
+
+.input_container {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 550px;
+}
+
+.Newsletter > h2 {
+  z-index: 2;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.Newsletter > p {
+  z-index: 2;
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: normal;
+  color: #fff;
+  width: 570px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 800px) {
+  .Newsletter {
+    /* background: rgb(33, 55, 125); */
+    background: linear-gradient(
+      90deg,
+      rgb(36, 62, 145) 0%,
+      rgba(14, 25, 36, 1) 50%
+    );
+
+    width: 100%;
+    height: 320px;
+    border-radius: 0px;
+    padding: 0 20px;
+    /* position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 156px;
+    margin-bottom: 151px; */
+  }
+
+  .newsLeaterBG {
+    z-index: 0;
+    width: 70%;
+    /* position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    bottom: -43px;
+    top: unset;
+    left: -40px;
+  }
+
+  .input_container {
+    z-index: 2;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Newsletter > h2 {
+    /* z-index: 2;
+    margin-bottom: 25px; */
+    font-size: 18px;
+    /* font-weight: 500;
+    color: #fff; */
+  }
+
+  .Newsletter > p {
+    z-index: 2;
+    /* margin-top: 25px; */
+    font-size: 13px;
+    line-height: 20px;
+    /* font-weight: normal; */
+    /* color: #fff; */
+    width: 100%;
+    letter-spacing: 0.87px;
+    /* text-align: center; */
+  }
+}

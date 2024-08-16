@@ -1,0 +1,28 @@
+button {
+  padding: 5px 30px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  background-color: #375ce7;
+  color: #fff;
+}
+
+button:hover {
+ transform: scale(1.05);
+ transition: 0.5s;
+
+}
+
+button:active {
+  transform: scale(1);
+  transition: 0.5s;
+ 
+ }
+
+@media only screen and (max-width: 800px) {
+  button {
+    width: 100%;
+  }
+}

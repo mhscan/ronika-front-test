@@ -1,0 +1,153 @@
+.PopularCart {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+  text-align: justify;
+  width: 315px;
+  transition: 0.5s;
+  border: 1px solid #d4d5d7;
+  border-radius: 10px;
+  padding: 12px 12px 20px 12px;
+}
+.PopularCart:hover   {
+transform: scale(1.01);
+  color: #375CE7;
+  transition: 0.5s;
+ }
+
+.PopularCart_imgContainer {
+  position: relative;
+}
+
+.PopularCart_img {
+  width: 291px;
+}
+
+.PopularCart_heart_icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #7d8b97;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* todo bold */
+.PopularCart_section {
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #375ce7;
+}
+/* todo bold */
+.PopularCart_title {
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 16px;
+}
+.PopularCart_description {
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 50px;
+  font-weight: 400;
+  color: #303030 !important;
+}
+.PopularCart_footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.PopularCart_view {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.PopularCart_play_icon {
+  padding: 7px;
+}
+
+.PopularCart_document_icon {
+  padding: 7px;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+  .PopularCart {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+    text-align: justify;
+    width: 315px;
+  
+    border: 1px solid #d4d5d7;
+    border-radius: 10px;
+    padding: 12px 12px 20px 12px;
+  }
+  
+  .PopularCart_imgContainer {
+    position: relative;
+  }
+  
+  .PopularCart_img {
+    width: 291px;
+  }
+  
+  .PopularCart_heart_icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #7d8b97;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  /* todo bold */
+  .PopularCart_section {
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #375ce7;
+  }
+  /* todo bold */
+  .PopularCart_title {
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 16px;
+  }
+  .PopularCart_description {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 50px;
+    font-weight: 400;
+  }
+  .PopularCart_footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+  }
+  
+  .PopularCart_view {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  .PopularCart_play_icon {
+    padding: 7px;
+  }
+  
+  .PopularCart_document_icon {
+    padding: 7px;
+  }
+  
+
+  
+}
