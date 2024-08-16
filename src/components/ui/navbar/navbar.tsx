@@ -41,6 +41,7 @@ const variants = {
       type: "spring",
       stiffness: 400,
       damping: 40,
+      
     },
   },
 };
@@ -120,7 +121,7 @@ const Navbar = () => {
           <svg width='23' height='23' viewBox='0 0 23 23'>
             <motion.path
               strokeWidth='3'
-              stroke='white'
+              stroke={openNav? 'black' :'white' }
               strokeLinecap='round'
               variants={{
                 closed: { d: "M 2 2.5 L 20 2.5" },
@@ -139,7 +140,7 @@ const Navbar = () => {
             />
             <motion.path
               strokeWidth='3'
-              stroke='white'
+              stroke={openNav? 'black' :'white' }
               strokeLinecap='round'
               variants={{
                 closed: { d: "M 2 16.346 L 20 16.346" },
